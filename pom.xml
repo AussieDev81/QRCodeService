@@ -2,12 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.github.dollarm8</groupId>
+        <artifactId>dollarm8-web-service</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.aussiedev81</groupId>
     <artifactId>QRCodeService</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <name>QRCode Service</name>
+    <description>This module provides QRCode generation and parsing for the DollarM8 Web Service</description>
 
+    <packaging>jar</packaging>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
         <dependency>
