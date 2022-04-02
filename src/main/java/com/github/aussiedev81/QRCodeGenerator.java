@@ -13,7 +13,7 @@ public class QRCodeGenerator implements QRCodeGen {
         QRCode qrCode = new QRCode(data);
         File file = qrCode.getImageFile();
         var response = Files.readAllBytes(file.toPath());
-//        Files.deleteIfExists(file.toPath());
+        Files.deleteIfExists(file.toPath());
         return response;
     }
 }
